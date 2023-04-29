@@ -1,4 +1,4 @@
-package com.example.examplemod.item;
+package com.example.tutorialMod.item;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;

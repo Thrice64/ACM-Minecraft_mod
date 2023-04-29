@@ -1,20 +1,11 @@
-package com.example.examplemod.generation;
+package com.example.tutorialMod.generation;
 
-import com.example.examplemod.block.ModBlocks;
-import com.example.tutorialMod.TutorialMod;
-import com.google.common.base.Supplier;
-import com.google.common.base.Suppliers;
+import com.example.TutorialMod;
 
 import net.minecraft.core.Registry;
-import net.minecraft.data.worldgen.features.OreFeatures;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.feature.Feature;
-import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
-
-import java.util.List;
 
 public class ModConfiguredFeatures {
     public static final DeferredRegister<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES =

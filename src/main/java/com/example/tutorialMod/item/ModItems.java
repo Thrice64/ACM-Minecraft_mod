@@ -1,18 +1,20 @@
 package com.example.tutorialMod.item;
 
-
-import com.example.examplemod.item.ModCreativeModTab;
-import com.example.tutorialMod.TutorialMod;
+import com.example.TutorialMod;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraft.world.item.*;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModItems {
+    // Creates a new Item with the id "tutorialMod: example_block",
+    // combining the namespace and path
+
     public static final DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, TutorialMod.MOD_ID);
+            DeferredRegister.create(ForgeRegistries.ITEMS,
+                    TutorialMod.MOD_ID);
 
     public static final RegistryObject<Item> ACMIUM = ITEMS.register("acmium",
             () -> new Item(new Item.Properties().tab(ModCreativeModTab.TUTORIAL_TAB)));

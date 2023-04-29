@@ -1,8 +1,8 @@
-package com.example.examplemod.block;
+package com.example.tutorialMod.block;
 
-import com.example.examplemod.item.ModCreativeModTab;
-import com.example.examplemod.item.ModItems;
-import com.example.tutorialMod.TutorialMod;
+import com.example.tutorialMod.item.ModCreativeModTab;
+import com.example.tutorialMod.item.ModItems;
+import com.example.TutorialMod;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;

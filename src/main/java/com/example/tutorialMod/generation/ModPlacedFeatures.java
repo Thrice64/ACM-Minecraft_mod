@@ -1,13 +1,11 @@
-package com.example.examplemod.generation;
+package com.example.tutorialMod.generation;
 
 
-import com.example.tutorialMod.TutorialMod;
+import com.example.TutorialMod;
 import net.minecraft.core.Registry;
-import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
 
 import java.util.List;
 
