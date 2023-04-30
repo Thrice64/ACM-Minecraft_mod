@@ -51,7 +51,7 @@ public class TutorialMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
+        ModEntityTypes.register(modEventBus);
         //ModConfiguredFeatures.register(modEventBus);
         //ModPlacedFeatures.register(modEventBus);
 
