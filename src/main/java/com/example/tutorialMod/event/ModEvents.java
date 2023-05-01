@@ -4,6 +4,7 @@ import it.unimi.dsi.fastutil.ints.Int2ObjectMap;
 import com.example.TutorialMod;
 import com.example.tutorialMod.entity.ModEntityTypes;
 import com.example.tutorialMod.entity.custom.ChomperEntity;
+import com.example.tutorialMod.entity.custom.JackEntity;
 import com.example.tutorialMod.item.ModItems;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -36,8 +37,10 @@ public class ModEvents {
             @SubscribeEvent
             public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
                 event.put(ModEntityTypes.CHOMPER.get(), ChomperEntity.setAttributes());
+                event.put(ModEntityTypes.JACK.get(), JackEntity.setAttributes());
             }
         }
+
     }
 }
 

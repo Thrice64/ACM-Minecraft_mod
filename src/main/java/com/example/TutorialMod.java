@@ -3,6 +3,7 @@ package com.example;
 import com.example.tutorialMod.entity.ModEntityTypes;
 import com.example.tutorialMod.item.ModItems;
 import com.example.tutorialMod.entity.client.ChomperRenderer;
+import com.example.tutorialMod.entity.client.JackRenderer;
 import com.example.tutorialMod.block.ModBlocks;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -94,6 +95,7 @@ public class TutorialMod
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
             EntityRenderers.register(ModEntityTypes.CHOMPER.get(), ChomperRenderer::new);
+            EntityRenderers.register(ModEntityTypes.JACK.get(), JackRenderer::new);
         }
     }
 }

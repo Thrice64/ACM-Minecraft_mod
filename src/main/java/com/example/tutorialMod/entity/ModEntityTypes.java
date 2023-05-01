@@ -1,6 +1,7 @@
 package com.example.tutorialMod.entity;
 import com.example.TutorialMod;
 import com.example.tutorialMod.entity.custom.ChomperEntity;
+import com.example.tutorialMod.entity.custom.JackEntity;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -17,7 +18,11 @@ public class ModEntityTypes {
                             .sized(0.4f, 1.5f)
                             .build(new ResourceLocation(TutorialMod.MOD_ID, "chomper").toString()));
 
-
+    public static final RegistryObject<EntityType<JackEntity>> JACK =
+            ENTITY_TYPES.register("jack",
+                    () -> EntityType.Builder.of(JackEntity::new, MobCategory.MONSTER)
+                            .sized(0.4f, 1.5f)
+                            .build(new ResourceLocation(TutorialMod.MOD_ID, "jack").toString()));
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
     }
